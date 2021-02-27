@@ -1,0 +1,106 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  // height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+  padding-bottom: 80px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.el-dialog__body{
+  padding: 10px 20px;
+}
+.el-table .warning-row {
+  color: red;
+}
+
+.el-table .success-row-bg {
+  color: #67C23A;
+  background-color: #e4ecf1;
+}
+.el-table .warning-row-bg {
+  color: red;
+  background-color: #e4ecf1;
+}
+
+.el-table .success-row {
+  color: #67C23A;
+}
+.vxe-table--body .warning-row {
+  color: red;
+}
+.vxe-table--body .success-row {
+  color: #67C23A;
+}
+.el-table .warning-row-bg {
+  background-color: #c9dffb;
+}
+// 表格 表头背景颜色
+.el-table th {
+  background-color: #E1F1FF;
+}
+.el-dialog__header{
+  border-bottom: 1px solid #ccc;
+}
+.el-dialog__body {
+  padding: 5px 10px;
+}
