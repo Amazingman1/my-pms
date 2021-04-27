@@ -328,7 +328,7 @@
     <RoomCode ref="RoomCode" />
     <TakePhoto ref="TakePhoto" @getPhotoBasce64="getPhoto" />
     <ReadIdCard ref="ReadIdCard" @IdInfo="getIdInfo" />
-    <VipCompany ref="vipCompany" :list-type="'vip'" @selectRow="selectVip" />
+    <VipCompany ref="vipCompany" list-type="vip" @selectRow="selectVip" />
     <CheckinDetil ref="CheckinDetil" />
   </el-dialog>
 </template>
