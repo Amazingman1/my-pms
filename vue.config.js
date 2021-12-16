@@ -36,12 +36,6 @@ module.exports = {
       [process.env.VUE_APP_BASE_API]: {
         // 前段代理跨域
         target: `http://dev.eloadspider.cn/`, // 开发环境
-        // target: `http://192.168.2.215:8000`, // 张宇 本地开发环境
-        // target: `http://pro.eloadspider.cn/`, // 生产环境
-        // target: `http://192.168.4.235:8001`, // 邓 本地线上环境
-        // target: `http://121.40.214.42:9888`,
-        // target: `http://192.168.4.181:8001`,
-        // target: `http://121.40.214.42:9106`,
         changeOrigin: true,
         pathRewrite: {
           ['^' + process.env.VUE_APP_BASE_API]: ''
